@@ -10,8 +10,8 @@ const libraryFineEmail = require("./emailTemplates/libraryFineEmailTemplate");
 
 const SES_CONFIG = {
   accessKeyId: process.env.ACCESSKEYID,
-  secretAccessKey: "Kelg/cz/mbJ0mKDUWK14Ye/rf4GMwVkaspwhPRFe",
-  region: "ap-south-1",
+  secretAccessKey: process.env.SECRETACCESSKEY,
+  region: process.env.REGION,
 };
 
 const AWS_SES = new AWS.SES(SES_CONFIG);
